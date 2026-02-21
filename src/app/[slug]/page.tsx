@@ -15,8 +15,7 @@ interface PageProps {
 
 // Generate Metadata dynamically based on resolved type
 export async function generateMetadata(
-    { params }: PageProps,
-    _parent: ResolvingMetadata
+    { params }: PageProps
 ): Promise<Metadata> {
     const slug = params.slug;
     const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://thebharatmirror.com";

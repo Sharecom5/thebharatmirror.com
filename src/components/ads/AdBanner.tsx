@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
+import Image from "next/image";
 import { adService, settingsService } from "@/lib/ads";
 
 interface AdBannerProps {
@@ -109,11 +110,13 @@ export default function AdBanner({ size = "rectangle", position, className = "" 
                         }
                         target="_blank"
                         rel="noopener noreferrer"
-                        className={`block overflow-hidden rounded-lg shadow-sm hover:shadow-md transition-all duration-300 transform hover:scale-[1.01] ${getSizeClasses()} mx-auto bg-white dark:bg-gray-800`}
+                        className={`block overflow-hidden rounded-lg shadow-sm hover:shadow-md transition-all duration-300 transform hover:scale-[1.01] ${getSizeClasses()} mx-auto bg-white dark:bg-gray-800 relative`}
                     >
-                        <img
+                        <Image
                             src={ad.imageUrl}
                             alt={ad.altText || "Advertisement"}
+                            fill
+                            unoptimized
                             className="w-full h-full object-cover"
                         />
                     </a>

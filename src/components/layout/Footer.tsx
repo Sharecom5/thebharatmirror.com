@@ -46,7 +46,7 @@ export default function Footer() {
                     <div className="col-span-1 lg:col-span-1">
                         <Logo className="mb-6 text-white" />
                         <p className="text-gray-400 text-sm leading-relaxed mb-6 font-medium">
-                            The Bharat Mirror is India's premier digital news platform, delivering high-quality journalism, breaking news, and deep-dive analysis from across the nation and the world.
+                            The Bharat Mirror is India&apos;s premier digital news platform, delivering high-quality journalism, breaking news, and deep-dive analysis from across the nation and the world.
                         </p>
                         <div className="flex gap-4">
                             <SocialLink
